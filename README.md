@@ -22,7 +22,7 @@ It leverages advanced linguistic models and supports multilingual text processin
 Comparative Analysis: Scikit-learn vs TensorFlow
 
 Aspect                     |  Scikit-learn                                                                                               |  TensorFlow                                                                                                    
----------------------------+-------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------
+
 Target Applications        |  Classical machine learning: classification, regression, clustering; suitable for small to medium datasets  |  Primarily deep learning and large-scale AI projects including computer vision, NLP, reinforcement learning    
 Ease of Use for Beginners  |  User-friendly API with simple functions for quick prototyping; well-suited for beginners in ML             |  Steeper learning curve due to complexity and options; TensorFlow 2.x improved usability with Keras integration
 Community Support          |  Large active community in traditional ML with extensive tutorials and support                              |  Very large and active community focused on deep learning; rich ecosystem with pre-trained models and tools    
