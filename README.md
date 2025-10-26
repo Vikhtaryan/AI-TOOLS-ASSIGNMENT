@@ -27,3 +27,30 @@ Target Applications        |  Classical machine learning: classification, regres
 Ease of Use for Beginners  |  User-friendly API with simple functions for quick prototyping; well-suited for beginners in ML             |  Steeper learning curve due to complexity and options; TensorFlow 2.x improved usability with Keras integration
 Community Support          |  Large active community in traditional ML with extensive tutorials and support                              |  Very large and active community focused on deep learning; rich ecosystem with pre-trained models and tools    
 In summary, Scikit-learn is best suited for traditional machine learning tasks and is easier for beginners, while TensorFlow is more powerful and flexible for deep learning and large-scale projects, with broader community resources for complex AI solutions
+
+
+
+Part 3: Ethics & Optimization 
+
+Ethical Considerations and Bias Mitigation:
+Machine learning models like those trained on MNIST or Amazon Reviews datasets can exhibit bias originating from imbalanced or non-representative training data, historical prejudices in data, or biased feature selections. This bias can manifest as unfair treatment or disproportionate errors across different demographic groups.
+
+Tools like TensorFlow Fairness Indicators help identify and evaluate biases in classification models by providing fairness metrics such as Positive Rate, True Positive Rate, and False Negative Rate across demographic subgroups. They enable quantification of error disparities which can highlight when certain groups are unfairly disadvantaged. By regularly monitoring these metrics, developers can adjust data inputs or model parameters to reduce bias and promote equitable outcomes.
+
+SpaCy’s rule-based systems contribute by allowing practitioners to implement custom rules that flag problematic patterns or biased language in text data or predictions, enabling targeted bias detection and mitigation in NLP models.
+
+Troubleshooting Challenge—Debugging TensorFlow Code:
+Common errors in TensorFlow scripts often involve dimension mismatches between predicted outputs and labels, or inappropriate choice of loss functions for the task at hand. Fixes need to ensure that the shape of logits or predictions matches that of the labels expected by the loss function, and that the loss function aligns with the task type (e.g., categorical cross-entropy for multi-class classification, binary cross-entropy for binary tasks, mean squared error for regression).
+
+In debugging, verify:
+
+Input and output tensor shapes throughout the model.
+
+Correct loss function usage consistent with model output activation (e.g., softmax with categorical cross-entropy).
+
+Appropriately set target tensor shapes (one-hot encoding or sparse labels).
+
+Learning rate settings, optimizer, and any metric computations matching the classification type.
+
+Summary:
+Ethical mitigation in MNIST or Amazon Reviews models benefits greatly from continuous fairness evaluation via TensorFlow Fairness Indicators, exposing demographic biases and guiding adjustments. SpaCy’s rule-based system complements this by flagging biased textual content or processed data. Debugging TensorFlow requires careful alignment of tensor dimensions and loss functions for correct model training and evaluation
